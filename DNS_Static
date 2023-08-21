@@ -38,7 +38,6 @@ add address=127.0.0.1 name=amupdatedl5.microsoft.com
 add address=127.0.0.1 name=windowsupdate.microsoft.com
 add address=127.0.0.1 name=download.microsoft.com
 add address=127.0.0.1 name=test.stats.update.microsoft.com
-
 /ip dns static
 add address=127.0.0.1 name=ntservicepack.microsoft.com
 add address=127.0.0.1 name=*.download.windowsupdate.com
