@@ -1,0 +1,73 @@
+/ip dns static
+add address=127.0.0.1 name=visionplus.id
+add address=127.0.0.1 name=*.visionplus.id
+add address=127.0.0.1 name=roblox.com
+add address=127.0.0.1 name=accountsettings.roblox.com
+add address=127.0.0.1 name=gold.roblox.com
+add address=127.0.0.1 name=pubgmobile.com
+add address=127.0.0.1 name=mobilelegends.com
+add address=127.0.0.1 name=m.mobilelegends.com
+add address=127.0.0.1 name=discord.com
+add address=127.0.0.1 name=discordapp.com
+add address=127.0.0.1 name=discord.gg
+add address=127.0.0.1 name=discord.app.com
+add address=127.0.0.1 name=discordapp.net
+add address=127.0.0.1 name=lancache.steamcontent.com
+add address=127.0.0.1 name=dist.blizzard.com
+add address=127.0.0.1 name=dist.blizzard.com.edgesuite.net
+add address=127.0.0.1 name=blizzard.vo.llnwd.net
+add address=127.0.0.1 name=blzddist1-a.akamaihd.net
+add address=127.0.0.1 name=blzddist2-a.akamaihd.net
+add address=127.0.0.1 name=blzddist3-a.akamaihd.net
+add address=127.0.0.1 name=level3.blizzard.com
+add address=127.0.0.1 name=nydus.battle.net
+add address=127.0.0.1 name=edge.blizzard.top.comcast.net
+add address=127.0.0.1 name=cdn.blizzard.com
+add address=127.0.0.1 regexp=*.cdn.blizzard.com
+add address=127.0.0.1 name=update.microsoft.com
+add address=127.0.0.1 name=redir.update.msft.com.trafficmanager.net
+add address=127.0.0.1 name=windowsupdate.com
+add address=127.0.0.1 name=dl.delivery.mp.microsoft.com
+add address=127.0.0.1 name=do.dsp.mp.microsoft.com
+add address=127.0.0.1 name=microsoft.com.edgesuite.net
+add address=127.0.0.1 name=amupdatedl.microsoft.com
+add address=127.0.0.1 name=amupdatedl2.microsoft.com
+add address=127.0.0.1 name=amupdatedl3.microsoft.com
+add address=127.0.0.1 name=amupdatedl4.microsoft.com
+add address=127.0.0.1 name=amupdatedl5.microsoft.com
+add address=127.0.0.1 name=windowsupdate.microsoft.com
+add address=127.0.0.1 name=download.microsoft.com
+add address=127.0.0.1 name=test.stats.update.microsoft.com
+
+/ip dns static
+add address=127.0.0.1 name=ntservicepack.microsoft.com
+add address=127.0.0.1 name=*.download.windowsupdate.com
+add address=127.0.0.1 name=*.update.microsoft.com
+add address=127.0.0.1 name=download.windowsupdate.com
+add address=127.0.0.1 name=*.windowsupdate.microsoft.com
+add address=127.0.0.1 regexp=*.windowsupdate.com
+add address=127.0.0.1 regexp=*.dl.delivery.mp.microsoft.com
+add address=127.0.0.1 regexp=*.microsoft.com.edgesuite.net
+add address=127.0.0.1 regexp=*.update.microsoft.com
+add address=127.0.0.1 regexp=*.do.dsp.mp.microsoft.com
+add address=127.0.0.1 regexp=download.microsoft.com
+add address=127.0.0.1 regexp=test.stats.update.microsoft.com
+add address=127.0.0.1 regexp=ntservicepack.microsoft.com
+add address=127.0.0.1 regexp=*.download.windowsupdate.com
+add address=127.0.0.1 regexp=*.update.microsoft.com
+add address=127.0.0.1 regexp=download.windowsupdate.com
+add address=127.0.0.1 regexp=*.windowsupdate.microsoft.com
+add address=127.0.0.1 name=assets1.xboxlive.com
+add address=127.0.0.1 name=assets2.xboxlive.com
+add address=127.0.0.1 name=xbox-mbr.xboxlive.com
+add address=127.0.0.1 name=assets1.xboxlive.com.nsatc.net
+add address=127.0.0.1 name=xvcf1.xboxlive.com
+add address=127.0.0.1 name=xvcf2.xboxlive.com
+add address=127.0.0.1 name=d1.xboxlive.com
+add address=127.0.0.1 name=croxyproxy.com
+add address=127.0.0.1 comment="Perjudian [Block]" regexp="^(.*.)\?slotindo.shop"
+add address=127.0.0.1 comment="VPN BROWSER [Block]" regexp="^(.*.)\?tcdn.me"
+add address=127.0.0.1 name=pinterest.com
+add address=127.0.0.1 comment=PINTEREST.COM disabled=yes regexp=".*\\pinterest\\.com\$"
+add address=127.0.0.1 comment=YANDEX.COM name=yandex.com
+add address=127.0.0.1 comment=YANDEX.COM regexp=".*\\yandex\\.com\$"
