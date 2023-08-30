@@ -1,0 +1,23 @@
+/ip firewall filter
+add action=fasttrack-connection chain=forward comment="defconf: fastrack established,related, untracked" connection-state=established,related,untracked disabled=yes
+add action=accept chain=forward comment="defconf: accept established,related, untracked" connection-state=established,related,untracked
+add action=drop chain=forward comment="defconf: drop invalid" connection-state=invalid
+add action=accept chain=input comment="defconf: accept established,related,untracked" connection-state=established,related,untracked
+add action=drop chain=input comment="defconf: drop invalid" connection-state=invalid
+add action=accept chain=input comment="defconf: accept ICMP" protocol=icmp
+add action=accept chain=input comment="defconf: accept to local loopback" dst-address=127.0.0.1
+add action=accept chain=input comment="defconf: accept SSH" dst-port=212 protocol=tcp
+add action=accept chain=input comment="defconf: accept  Winbox" dst-port=8292 protocol=tcp
+add action=accept chain=input comment="defconf: accept  Winbox(SD)" dst-port=8299 protocol=tcp
+add action=accept chain=input comment="defconf: accept SNMP" dst-port=161 protocol=udp
+add action=accept chain=input comment="defconf: accept SNMP" dst-port=161 protocol=tcp
+add action=accept chain=input comment="defconf: accept L2TP" dst-port=500,1701,4500 protocol=udp
+add action=accept chain=input comment="defconf: accept L2TP" dst-port=1701 protocol=tcp
+add action=drop chain=input comment="defconf: DNS Cache Amplication" disabled=yes dst-port=53 in-interface-list=WAN protocol=udp
+add action=drop chain=input comment="defconf: DNS Cache Amplication" disabled=yes dst-port=53 in-interface-list=WAN protocol=tcp
+add action=drop chain=input comment="defconf: drop all not coming from LAN" disabled=yes in-interface-list=!LAN
+add action=drop chain=forward comment="defconf:  drop all from WAN not DSTNATed" connection-nat-state=!dstnat connection-state=new disabled=yes in-interface-list=WAN
+/ip firewall nat
+add action=dst-nat chain=dstnat comment="defconf: Ridirect DNS Lokal" disabled=yes dst-port=53 protocol=tcp to-addresses=10.10.24.1 to-ports=53
+add action=dst-nat chain=dstnat comment="defconf: Ridirect DNS Lokal" disabled=yes dst-port=53 protocol=udp to-addresses=10.10.24.1 to-ports=53
+add action=masquerade chain=srcnat comment="defconf: Masquered" out-interface=ether1-Internet
