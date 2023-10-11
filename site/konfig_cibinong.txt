@@ -37,8 +37,6 @@ set 0 memory-lines=200
 set full policy=local,telnet,ssh,ftp,reboot,read,write,policy,test,winbox,password,web,sniff,sensitive,api,romon,dude,tikapp
 /ip neighbor discovery-settings
 set discover-interface-list=LAN
-/interface l2tp-server server
-set ipsec-secret=123456 use-ipsec=yes
 /interface list member
 add interface=combo1 list=WAN
 add comment="defconf: LAN SMPIA28" disabled=yes interface=ether1-SMP-lt1 list=LAN
@@ -48,7 +46,6 @@ add interface="ether5-LAN SMP" list=LAN
 /interface pptp-server server
 set authentication=pap,chap,mschap1,mschap2
 /ip address
-add address=103.124.115.114/29 comment="defconf: WAN" interface=combo1 network=103.124.115.112
 add address=192.168.1.1/24 disabled=yes interface=ether2-lt2 network=192.168.1.0
 add address=10.10.26.1/30 comment="defconf: Link to SDIA27" interface=ether7-SD27 network=10.10.26.0
 add address=10.10.26.5/30 comment="defconf: Link to TKIA27" interface=ether6-TK27 network=10.10.26.4
@@ -185,22 +182,10 @@ add action=masquerade chain=srcnat out-interface=combo1 src-address-list=LOKAL
 add distance=1 gateway=103.124.115.113
 add comment="Interkoneksi SDIA27" distance=1 dst-address=192.168.4.0/22 gateway=10.10.26.2
 add comment="Interkoneksi TKIA27" distance=1 dst-address=192.168.172.0/23 gateway=10.10.26.6
-/ip service
-set telnet disabled=yes port=223
-set ftp disabled=yes
-set www disabled=yes
-set ssh port=212
-set api disabled=yes
-set winbox port=8299
-set api-ssl disabled=yes
 /ip socks
 set max-connections=100
 /ip ssh
 set allow-none-crypto=yes forwarding-enabled=remote
-/ppp profile
-add bridge=*A name=ypia-l2tp
-/ppp secret
-add name=ypia password=ypi4 profile=ypia-l2tp service=l2tp
 /snmp
 set contact=taufik enabled=yes location=@cibinong trap-community=alazhar trap-version=2
 /system clock
