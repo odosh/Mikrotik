@@ -1,11 +1,5 @@
 /queue simple
 add max-limit=410M/410M name=_PARENT_ALL priority=8/8 target=192.168.72.0/22,192.168.76.0/23,192.168.78.0/26,192.168.78.64/26,192.168.78.128/26,192.168.120.0/22,192.168.124.0/23,192.168.10.0/24
-
-
-add max-limit=315M/315M name=_BIZNET priority=6/6 target=192.168.72.0/22,192.168.76.0/23,192.168.78.0/26,192.168.78.64/26,192.168.78.128/26,192.168.120.0/22,192.168.124.0/23,192.168.10.0/24
-add limit-at=3096k/3096k max-limit=10M/10M name="_AULA BS" parent=_BIZNET queue=pcq-upload-default/pcq-download-default target=192.168.10.0/24
-add disabled=yes limit-at=3096k/3096k max-limit=180M/180M name=_SMA parent=_BIZNET priority=7/7 queue=pcq-upload-default/pcq-download-default target=192.168.72.0/22
-add disabled=yes limit-at=3096k/3096k max-limit=130M/130M name=_SMP parent=_BIZNET queue=pcq-upload-default/pcq-download-default target=192.168.120.0/22
-add max-limit=98M/98M name=_IFORTE target=192.168.76.0/23,192.168.124.0/23
-add limit-at=3096k/3096k max-limit=12M/12M name=_Management parent=_IFORTE target=192.168.124.0/23
-add limit-at=4096k/4096k max-limit=75M/75M name="_SMA Official" parent=_IFORTE priority=7/7 target=192.168.76.0/23
+add limit-at=2048k/2048k max-limit=79M/79M name=_iForte parent=_PARENT_ALL queue=default-half-small/default-half-small target=192.168.78.0/26
+add limit-at=2048k/2048k max-limit=315M/315M name=_BIZNET parent=_PARENT_ALL priority=6/6 queue=default-half-small/default-half-small target=\
+    192.168.72.0/22,192.168.76.0/23,192.168.78.64/26,192.168.78.128/26,192.168.120.0/22,192.168.124.0/23,192.168.10.0/24
