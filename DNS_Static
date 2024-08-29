@@ -1,72 +1,272 @@
 /ip dns static
-add address=127.0.0.1 name=visionplus.id
-add address=127.0.0.1 name=*.visionplus.id
-add address=127.0.0.1 name=roblox.com
-add address=127.0.0.1 name=accountsettings.roblox.com
-add address=127.0.0.1 name=gold.roblox.com
-add address=127.0.0.1 name=pubgmobile.com
-add address=127.0.0.1 name=mobilelegends.com
-add address=127.0.0.1 name=m.mobilelegends.com
-add address=127.0.0.1 name=discord.com
-add address=127.0.0.1 name=discordapp.com
-add address=127.0.0.1 name=discord.gg
-add address=127.0.0.1 name=discord.app.com
-add address=127.0.0.1 name=discordapp.net
-add address=127.0.0.1 name=lancache.steamcontent.com
-add address=127.0.0.1 name=dist.blizzard.com
-add address=127.0.0.1 name=dist.blizzard.com.edgesuite.net
-add address=127.0.0.1 name=blizzard.vo.llnwd.net
-add address=127.0.0.1 name=blzddist1-a.akamaihd.net
-add address=127.0.0.1 name=blzddist2-a.akamaihd.net
-add address=127.0.0.1 name=blzddist3-a.akamaihd.net
-add address=127.0.0.1 name=level3.blizzard.com
-add address=127.0.0.1 name=nydus.battle.net
-add address=127.0.0.1 name=edge.blizzard.top.comcast.net
-add address=127.0.0.1 name=cdn.blizzard.com
-add address=127.0.0.1 regexp=*.cdn.blizzard.com
-add address=127.0.0.1 name=update.microsoft.com
-add address=127.0.0.1 name=redir.update.msft.com.trafficmanager.net
-add address=127.0.0.1 name=windowsupdate.com
-add address=127.0.0.1 name=dl.delivery.mp.microsoft.com
-add address=127.0.0.1 name=do.dsp.mp.microsoft.com
-add address=127.0.0.1 name=microsoft.com.edgesuite.net
-add address=127.0.0.1 name=amupdatedl.microsoft.com
-add address=127.0.0.1 name=amupdatedl2.microsoft.com
-add address=127.0.0.1 name=amupdatedl3.microsoft.com
-add address=127.0.0.1 name=amupdatedl4.microsoft.com
-add address=127.0.0.1 name=amupdatedl5.microsoft.com
-add address=127.0.0.1 name=windowsupdate.microsoft.com
-add address=127.0.0.1 name=download.microsoft.com
-add address=127.0.0.1 name=test.stats.update.microsoft.com
-/ip dns static
-add address=127.0.0.1 name=ntservicepack.microsoft.com
-add address=127.0.0.1 name=*.download.windowsupdate.com
-add address=127.0.0.1 name=*.update.microsoft.com
-add address=127.0.0.1 name=download.windowsupdate.com
-add address=127.0.0.1 name=*.windowsupdate.microsoft.com
-add address=127.0.0.1 regexp=*.windowsupdate.com
-add address=127.0.0.1 regexp=*.dl.delivery.mp.microsoft.com
-add address=127.0.0.1 regexp=*.microsoft.com.edgesuite.net
-add address=127.0.0.1 regexp=*.update.microsoft.com
-add address=127.0.0.1 regexp=*.do.dsp.mp.microsoft.com
-add address=127.0.0.1 regexp=download.microsoft.com
-add address=127.0.0.1 regexp=test.stats.update.microsoft.com
-add address=127.0.0.1 regexp=ntservicepack.microsoft.com
-add address=127.0.0.1 regexp=*.download.windowsupdate.com
-add address=127.0.0.1 regexp=*.update.microsoft.com
-add address=127.0.0.1 regexp=download.windowsupdate.com
-add address=127.0.0.1 regexp=*.windowsupdate.microsoft.com
-add address=127.0.0.1 name=assets1.xboxlive.com
-add address=127.0.0.1 name=assets2.xboxlive.com
-add address=127.0.0.1 name=xbox-mbr.xboxlive.com
-add address=127.0.0.1 name=assets1.xboxlive.com.nsatc.net
-add address=127.0.0.1 name=xvcf1.xboxlive.com
-add address=127.0.0.1 name=xvcf2.xboxlive.com
-add address=127.0.0.1 name=d1.xboxlive.com
-add address=127.0.0.1 name=croxyproxy.com
-add address=127.0.0.1 comment="Perjudian [Block]" regexp="^(.*.)\?slotindo.shop"
-add address=127.0.0.1 comment="VPN BROWSER [Block]" regexp="^(.*.)\?tcdn.me"
-add address=127.0.0.1 name=pinterest.com
-add address=127.0.0.1 comment=PINTEREST.COM disabled=yes regexp=".*\\pinterest\\.com\$"
-add address=127.0.0.1 comment=YANDEX.COM name=yandex.com
-add address=127.0.0.1 comment=YANDEX.COM regexp=".*\\yandex\\.com\$"
+add address=10.10.22.6 comment="defconf: Localhost" name=smpia36.net
+add address=10.10.22.6 comment="defconf: Localhost" name=sdia36.net
+add address=192.168.88.1 comment=blocked-domain name=router.lan
+add address=127.0.0.1 comment=blocked-domain name=roblox.com
+add address=127.0.0.1 comment=blocked-domain name=accountsettings.roblox.com
+add address=127.0.0.1 comment=blocked-domain name=gold.roblox.com
+add address=127.0.0.1 comment=blocked-domain name=pubgmobile.com
+add address=127.0.0.1 comment=blocked-domain name=mobilelegends.com
+add address=127.0.0.1 comment=blocked-domain name=m.mobilelegends.com
+add address=127.0.0.1 comment=blocked-domain name=dis.gd
+add address=127.0.0.1 comment=blocked-domain name=discord.co
+add address=127.0.0.1 comment=blocked-domain name=discord.com
+add address=127.0.0.1 comment=blocked-domain name=discord.design
+add address=127.0.0.1 comment=blocked-domain name=discord.dev
+add address=127.0.0.1 comment=blocked-domain name=discord.gg
+add address=127.0.0.1 comment=blocked-domain name=discord.gift
+add address=127.0.0.1 comment=blocked-domain name=discord.gifts
+add address=127.0.0.1 comment=blocked-domain name=discord.media
+add address=127.0.0.1 comment=blocked-domain name=discord.new
+add address=127.0.0.1 comment=blocked-domain name=discord.store
+add address=127.0.0.1 comment=blocked-domain name=discord.tools
+add address=127.0.0.1 comment=blocked-domain name=discord-activities.com
+add address=127.0.0.1 comment=blocked-domain name=discordactivities.com
+add address=127.0.0.1 comment=blocked-domain name=discordapp.com
+add address=127.0.0.1 comment=blocked-domain name=discordapp.net
+add address=127.0.0.1 comment=blocked-domain name=discordmerch.com
+add address=127.0.0.1 comment=blocked-domain name=discordpartygames.com
+add address=127.0.0.1 comment=blocked-domain name=discordsays.com
+add address=127.0.0.1 comment=blocked-domain name=discordstatus.com
+add address=127.0.0.1 comment=blocked-domain name=discordapp.io
+add address=127.0.0.1 comment=blocked-domain name=discordcdn.com
+add address=127.0.0.1 comment=blocked-domain name=lancache.steamcontent.com
+add address=127.0.0.1 comment=blocked-domain name=dist.blizzard.com
+add address=127.0.0.1 comment=blocked-domain name=blizzard.vo.llnwd.net
+add address=127.0.0.1 comment=blocked-domain name=blzddist1-a.akamaihd.net
+add address=127.0.0.1 comment=blocked-domain name=blzddist2-a.akamaihd.net
+add address=127.0.0.1 comment=blocked-domain name=blzddist3-a.akamaihd.net
+add address=127.0.0.1 comment=blocked-domain name=level3.blizzard.com
+add address=127.0.0.1 comment=blocked-domain name=nydus.battle.net
+add address=127.0.0.1 comment=blocked-domain name=cdn.blizzard.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.cdn.blizzard.com
+add address=127.0.0.1 comment=blocked-domain name=forefrontdl.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=ntservicepack.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=statsfe2.ws.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=update.microsoft
+add address=127.0.0.1 comment=blocked-domain name=update.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=update.microsoft.com.nsatc.net
+add address=127.0.0.1 comment=blocked-domain name=windowsupdate.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=windowsupdate.nsatc.net
+add address=127.0.0.1 comment=blocked-domain name=wustat.windows.com
+add address=127.0.0.1 comment=blocked-domain name=windowsupdate.com
+add address=127.0.0.1 comment=blocked-domain name=dl.delivery.mp.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=do.dsp.mp.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=amupdatedl.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=amupdatedl2.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=amupdatedl3.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=amupdatedl4.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=amupdatedl5.microsoft.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.windowsupdate.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.dl.delivery.mp.microsoft.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.update.microsoft.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.do.dsp.mp.microsoft.com
+add address=127.0.0.1 comment=blocked-domain name=netflix.com
+add address=127.0.0.1 comment=blocked-domain name=flxvpn.net
+add address=127.0.0.1 comment=blocked-domain name=netflix.ca
+add address=127.0.0.1 comment=blocked-domain name=netflix.com.au
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest10.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest1.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest2.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest3.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest4.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest5.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest6.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest7.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest8.com
+add address=127.0.0.1 comment=blocked-domain name=netflixdnstest9.com
+add address=127.0.0.1 comment=blocked-domain name=netflixinvestor.com
+add address=127.0.0.1 comment=blocked-domain name=netflix.net
+add address=127.0.0.1 comment=blocked-domain name=netflixstudios.com
+add address=127.0.0.1 comment=blocked-domain name=netflixtechblog.com
+add address=127.0.0.1 comment=blocked-domain name=nflxext.com
+add address=127.0.0.1 comment=blocked-domain name=nflximg.com
+add address=127.0.0.1 comment=blocked-domain name=nflximg.net
+add address=127.0.0.1 comment=blocked-domain name=nflxso.net
+add address=127.0.0.1 comment=blocked-domain name=nflxvideo.net
+add address=127.0.0.1 comment=blocked-domain regexp="^(.*.)\?.netflix.com"
+add address=127.0.0.1 comment=blocked-domain regexp="^(.*.)\?slotindo.shop"
+add address=127.0.0.1 comment=blocked-domain regexp="^(.*.)\?tcdn.me"
+add address=127.0.0.1 comment=blocked-domain name=assets1.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=assets2.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=xbox-mbr.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=xvcf1.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=xvcf2.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=d1.xboxlive.com
+add address=127.0.0.1 comment=blocked-domain name=croxyproxy.com
+add address=127.0.0.1 comment=blocked-domain name=pinterest.com
+add address=127.0.0.1 comment=blocked-domain regexp=*.pinterest.com
+add address=127.0.0.1 comment=blocked-domain name=konami.com
+add address=127.0.0.1 comment=blocked-domain regexp="^.+(konami.com).*S"
+add address=127.0.0.1 comment=blocked-domain regexp="(^|\\.)muscdn\\.com\$"
+add address=127.0.0.1 comment=blocked-domain name=konami.app.com
+add address=127.0.0.1 comment=blocked-domain regexp=".*\\pinterest\\.com\$"
+add address=127.0.0.1 comment=blocked-domain name=yandex.com
+add address=127.0.0.1 comment=blocked-domain regexp=".*\\yandex\\.com\$"
+add address=127.0.0.1 comment=blocked-domain name=visionplus.id
+add address=127.0.0.1 comment=blocked-domain name=*.visionplus.id
+add address=127.0.0.1 comment=blocked-domain name=dl2.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=wg.gcdn.co
+add address=127.0.0.1 comment=blocked-domain name=wgus-wotasia.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wot-ak.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wot-gc.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wot-se.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wot-cdx.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wows-ak.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wows-gc.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wows-se.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wows-cdx.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wowp-ak.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wowp-gc.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wowp-se.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=dl-wowp-cdx.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=wgus-woteu.wargaming.net
+add address=127.0.0.1 comment=blocked-domain name=cdn-na1.homecomingservers.com
+add address=127.0.0.1 comment=blocked-domain name=cdn-na2.homecomingservers.com
+add address=127.0.0.1 comment=blocked-domain name=cdn-na3.homecomingservers.com
+add address=127.0.0.1 comment=blocked-domain name=cdn-eu1.homecomingservers.com
+add address=127.0.0.1 comment=blocked-domain name=s.team
+add address=127.0.0.1 comment=blocked-domain name=steam-chat.com
+add address=127.0.0.1 comment=blocked-domain name=steamchina.com
+add address=127.0.0.1 comment=blocked-domain name=steamcommunity.com
+add address=127.0.0.1 comment=blocked-domain name=steamcontent.com
+add address=127.0.0.1 comment=blocked-domain name=steamgames.com
+add address=127.0.0.1 comment=blocked-domain name=steampowered.com
+add address=127.0.0.1 comment=blocked-domain name=steampowered.com.8686c.com
+add address=127.0.0.1 comment=blocked-domain name=steamserver.net
+add address=127.0.0.1 comment=blocked-domain name=steamstatic.com
+add address=127.0.0.1 comment=blocked-domain name=steamstatic.com.8686c.com
+add address=127.0.0.1 comment=blocked-domain name=steamusercontent.com
+add address=127.0.0.1 comment=blocked-domain name=crazygames.com
+add address=127.0.0.1 comment=blocked-domain name=poki.com
+add address=127.0.0.1 comment=blocked-domain name=cdninstagram.com
+add address=127.0.0.1 comment=blocked-domain name=ig.me
+add address=127.0.0.1 comment=blocked-domain name=igsonar.com
+add address=127.0.0.1 comment=blocked-domain name=instagram.c10r.facebook.com
+add address=127.0.0.1 comment=blocked-domain name=instagram.com
+add address=127.0.0.1 comment=blocked-domain name=pscdn.co
+add address=127.0.0.1 comment=blocked-domain name=scdn.co
+add address=127.0.0.1 comment=blocked-domain name=spoti.fi
+add address=127.0.0.1 comment=blocked-domain name=spotifycdn.com
+add address=127.0.0.1 comment=blocked-domain name=spotifycdn.net
+add address=127.0.0.1 comment=blocked-domain name=spotifycharts.com
+add address=127.0.0.1 comment=blocked-domain name=spotifycodes.com
+add address=127.0.0.1 comment=blocked-domain name=spotify.com
+add address=127.0.0.1 comment=blocked-domain name=spotifyjobs.com
+add address=127.0.0.1 comment=blocked-domain name=spotifynewsroom.jp
+add address=127.0.0.1 comment=blocked-domain name=spotilocal.com
+add address=127.0.0.1 comment=blocked-domain name=tospotify.com
+add address=127.0.0.1 comment=blocked-domain name=v16a.tiktokcdn.com
+add address=127.0.0.1 comment=blocked-domain name=p16-tiktokcdn-com.akamaized.net
+add address=127.0.0.1 comment=blocked-domain name=log.tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=ib.tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=api-h2.tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=v16m.tiktokcdn.com
+add address=127.0.0.1 comment=blocked-domain name=api.tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=v19.tiktokcdn.com
+add address=127.0.0.1 comment=blocked-domain name=mon.musical.ly
+add address=127.0.0.1 comment=blocked-domain name=api2-16-h2.musical.ly
+add address=127.0.0.1 comment=blocked-domain name=api2.musical.ly
+add address=127.0.0.1 comment=blocked-domain name=log2.musical.ly
+add address=127.0.0.1 comment=blocked-domain name=api2-21-h2.musical.ly
+add address=127.0.0.1 comment=blocked-domain name=api21-h2.tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=m.tiktok.com
+add address=127.0.0.1 comment=blocked-domain name=muscdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.c.worldfcdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktok.com
+add address=127.0.0.1 comment=blocked-domain name=*.tiktok.com
+add address=127.0.0.1 comment=blocked-domain name=www.tiktok.com
+add address=127.0.0.1 comment=blocked-domain name=ns-440.awsdns-55.com
+add address=127.0.0.1 comment=blocked-domain name=ns-722.awsdns-26.net
+add address=127.0.0.1 comment=blocked-domain name=ns-1475.awsdns-56.org
+add address=127.0.0.1 comment=blocked-domain name=ns-1574.awsdns-04.co.uk
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn-com.akamaized.net
+add address=127.0.0.1 comment=blocked-domain name=abtest-sg-tiktok.byteoversea.com
+add address=127.0.0.1 comment=blocked-domain name=abtest-va-tiktok.byteoversea.com
+add address=127.0.0.1 comment=blocked-domain name=byteglb.com
+add address=127.0.0.1 comment=blocked-domain name=gts.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=isnssdk.com
+add address=127.0.0.1 comment=blocked-domain name=lf1-ttcdn-tos.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=musemuse.cn
+add address=127.0.0.1 comment=blocked-domain name=musical.ly
+add address=127.0.0.1 comment=blocked-domain name=p16-ad-sg.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p16-tiktok-sg.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p16-tiktok-sign-va-h2.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p16-tiktok-va-h2.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p16-tiktok-va.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p16-va-tiktok.ibyteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p1-tt.byteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p1-tt-ipv6.byteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p26-tt.byteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p3-tt-ipv6.byteimg.com
+add address=127.0.0.1 comment=blocked-domain name=p9-tt.byteimg.com
+add address=127.0.0.1 comment=blocked-domain name=pull-f3-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-f5-hs.flive.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-f5-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-f5-mus.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-flv-f1-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-flv-f6-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-flv-l1-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-flv-l1-mus.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-flv-l6-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-hls-l1-mus.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-l3-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-rtmp-f1-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-rtmp-f6-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-rtmp-l1-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-rtmp-l1-mus.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=pull-rtmp-l6-hs.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=quic-tiktok-core-proxy-i18n-gcpva.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=quic-tiktok-proxy-i18n-gcpva.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=sf16-ttcdn-tos.ipstatp.com
+add address=127.0.0.1 comment=blocked-domain name=sf1-ttcdn-tos.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=sf6-ttcdn-tos.pstatp.com
+add address=127.0.0.1 comment=blocked-domain name=sgsnssdk.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.atomile.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.c.bytefcdn-oversea.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.c.bytefcdn-ttpeu.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.c.bytetcdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.qlivecdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.rocket-cdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn.com.tlivepush.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn-eu.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn-in.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn-us.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokcdn-us.com.atomile.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokd.org
+add address=127.0.0.1 comment=blocked-domain name=tiktokglobalshop.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokglobalshopv.com
+add address=127.0.0.1 comment=blocked-domain name=tiktok.in
+add address=127.0.0.1 comment=blocked-domain name=tiktok-lb-alisg.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=tiktok-lb-maliva.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokmusic.app
+add address=127.0.0.1 comment=blocked-domain name=tiktok-platform-lb-alisg.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=tiktok-platform-lb-maliva.byteoversea.net
+add address=127.0.0.1 comment=blocked-domain name=tiktokshop.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokstaticb.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.com.c.bytefcdn-oversea.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.com.c.worldfcdn2.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.com.c.worldfcdn.com
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.eu
+add address=127.0.0.1 comment=blocked-domain name=tiktokv.us
+add address=127.0.0.1 comment=blocked-domain name=tlivecdn.com
+add address=127.0.0.1 comment=blocked-domain name=ttdns2.com
+add address=127.0.0.1 comment=blocked-domain name=ttlivecdn.com
+add address=127.0.0.1 comment=blocked-domain name=ttoversea.net
+add address=127.0.0.1 comment=blocked-domain name=ttoverseaus.net
+add address=127.0.0.1 comment=blocked-domain name=ttwstatic.com
+add address=127.0.0.1 comment=blocked-domain name=wa.me
+add address=127.0.0.1 comment=blocked-domain name=whatsappbrand.com
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.cc
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.com
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.info
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.net
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.org
+add address=127.0.0.1 comment=blocked-domain name=whatsapp-plus.info
+add address=127.0.0.1 comment=blocked-domain name=whatsapp-plus.me
+add address=127.0.0.1 comment=blocked-domain name=whatsapp-plus.net
+add address=127.0.0.1 comment=blocked-domain name=whatsapp.tv
+add address=127.0.0.1 comment=blocked-domain regexp="(^|\\.)musical\\.ly\$"
