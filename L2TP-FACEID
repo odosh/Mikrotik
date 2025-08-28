@@ -1,0 +1,40 @@
+L2TP client
+
+memebuat bridge dengan nama BCP-bridge, 
+tambahkan - masukan port 2,3 kedalam bridge
+membuat profile PPP, pada kolom bridge pilih BCP-bridge
+membuat secrets name "face-id@nama_kampus", pilih profile
+Membuat fitur dial-up
+pilih menu L2TP-client
+
+#VPN #BIOTIME
+++ INTERKONEKSI BIOTIME SERVER & FACE ID ++ 
+IP VPN = SERVER VPN L2TP
+PROTOKOL = L2TP
+SERVER BIOTIME LOCAL= 192.168.12.250
+
+#KONFIG_ROUTER_FACEID to ROUTER DISTRIBUSI 
+ADD address = local address for router, interface = ether
+
+#KONFIG ROUTER L2TP DIAL-UP CLIENT: 
+ADD [address = set local address for router, interface = ether1 / WAN],
+CREATE BCP-BRIDGE add PORT [2,3] 
+CREATE PROFILE PPP [name = L2TP-ALCIK, bridge = BCP-BRIDE]
+CREATE SECRETS [name = "face-id@nama_kampus", password = '']
+CREATE L2TP-CLIENT 
+CREATE DHCP-CLIENT [interface = BCP-BRIDGE]
+SET IDENTITY = RO-FACEID@ALCIK
+
+
+/ip firewall filter
+add action=accept chain=input comment="defconf: accept established,related,untracked" connection-state=established,related,untracked
+add action=drop chain=input comment="defconf: drop invalid" connection-state=invalid
+add action=accept chain=input comment="defconf: accept ICMP" protocol=icmp
+add action=accept chain=input comment="defconf: accept to local loopback (for CAPsMAN)" dst-address=127.0.0.1
+add action=drop chain=input comment="defconf: drop all not coming from LAN" in-interface-list=!LAN
+add action=accept chain=forward comment="defconf: accept in ipsec policy" ipsec-policy=in,ipsec
+add action=accept chain=forward comment="defconf: accept out ipsec policy" ipsec-policy=out,ipsec
+add action=fasttrack-connection chain=forward comment="defconf: fasttrack" connection-state=established,related
+add action=accept chain=forward comment="defconf: accept established,related, untracked" connection-state=established,related,untracked
+add action=drop chain=forward comment="defconf: drop invalid" connection-state=invalid
+add action=drop chain=forward comment="defconf: drop all from WAN not DSTNATed" connection-nat-state=!dstnat connection-state=new in-interface-list=WAN
